@@ -1,0 +1,10 @@
+  {
+  "type": "Continuous",
+  "assigned_to": "pxm3088",
+  "u_elevated_permissions_user_id": "pxm3088",
+  "category": "Application",
+  "cmdb_ci": "pr-salesforecasting",
+  "template": "CD0001464",
+  "description": "Continuous CHG for SF-RelexTransferService",
+  "u_fms_number": "IT-08112"
+}

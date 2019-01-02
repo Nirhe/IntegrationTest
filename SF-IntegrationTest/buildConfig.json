@@ -1,0 +1,64 @@
+{
+  "projectInfo": {
+    "name": "SupplyChain-IPR_SF-RelexTransferService",
+    "fmsNumber": "IT-08112",
+    "cdTemplate": "CD0001464",
+    "language": "java",
+    "versionStrategy": "tracker"
+  },
+  "artifactoryConfig": {
+    "artifactoryDomain": "https://maven.artifactory.homedepot.com/artifactory",
+    "artifactoryRepoKey": "libs-release-local",
+    "artifactoryRepoKeySnapshot": "libs-snapshot-local",
+    "artifactoryGroup": "com/homedepot/mm/ab/sfftp/relextransferservice",
+    "artifactDirectory": "../build",
+    "artifactType": "jar"
+  },
+  "fortify": {
+    "foldersToScan": "src",
+    "emailList": "e9w3d9v7m8a6f1r3@thdengops.slack.com",
+    "project-name":  "SupplyChain-IPR_SF-RelexTransferService"
+
+
+  },
+  "environments": {
+    "qa": {
+      "artifactCategory": "snapshot",
+      "manualDeployEnvs": ["development"],
+      "associatedBranchName": "Dev_QA",
+      "createChange": "False"
+    },
+    "pr": {
+      "artifactCategory": "release",
+      "manualDeployEnvs": ["development"],
+      "associatedBranchName": "master",
+      "snowfield-lifecycle": "pr",
+      "createChange": "True"
+    }
+  },
+  "github": {
+    "org": "SupplyChain-IPR",
+    "repo": "SF-RelexTransferService",
+    "URL": "https://github.homedepot.com/api/v3/repos"
+  },
+  "tracker": {
+    "projectId": 1899603
+  },
+  "serviceNow": {
+    "windows": [
+      {
+        "start": "08:00:00",
+        "end": "12:00:00"
+      },
+      {
+        "start": "13:00:00",
+        "end": "18:00:00"
+      }
+    ]
+  },
+  "slack": {
+    "channel": "#salesforecasting_cicd",
+    "botName": "DeployBot",
+    "emoji": ":robot_face:"
+  }
+}
